@@ -17,27 +17,33 @@ assetsSummary:
   approach:
   - name: microscopy approach; cell population imaging
     schemaKey: ApproachType
+  - name: behavioral approach
+    schemaKey: ApproachType
   dataStandard:
   - identifier: RRID:SCR_015242
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: one-photon microscopy technique
+  - name: behavioral technique
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 94317216093
-  numberOfFiles: 8
-  numberOfSubjects: 2
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 6254731701
+  numberOfFiles: 4
+  numberOfSubjects: 1
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
     name: Mus musculus - House mouse
     schemaKey: SpeciesType
   variableMeasured:
-  - ImagingPlane
   - OpticalChannel
-  - OnePhotonSeries
+  - SpatialSeries
+  - PlaneSegmentation
+  - ImagingPlane
+  - ProcessingModule
 citation: International Brain Laboratory; Davatolhagh, M. Felicia; Couto, João; Melin,
   Maxwell D.; Oesch, Lukas T.; Findling, Charles; Morales, P. Zitlali; Hong, Isabelle;
   Churchland, Anne K. (2026) IBL Widefield (Version draft) [Data set]. DANDI Archive.
