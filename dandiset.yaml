@@ -30,8 +30,10 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 6254731701
-  numberOfFiles: 4
+  - name: one-photon microscopy technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 39601954363
+  numberOfFiles: 5
   numberOfSubjects: 1
   schemaKey: AssetsSummary
   species:
@@ -44,6 +46,7 @@ assetsSummary:
   - PlaneSegmentation
   - ImagingPlane
   - ProcessingModule
+  - OnePhotonSeries
 citation: International Brain Laboratory; Davatolhagh, M. Felicia; Couto, João; Melin,
   Maxwell D.; Oesch, Lukas T.; Findling, Charles; Morales, P. Zitlali; Hong, Isabelle;
   Churchland, Anne K. (2026) IBL Widefield (Version draft) [Data set]. DANDI Archive.
@@ -91,6 +94,7 @@ contributor:
   - identifier: https://ror.org/046rm7j60
     name: University of California, Los Angeles
     schemaKey: Affiliation
+  identifier: 0009-0005-1159-3619
   includeInCitation: true
   name: Oesch, Lukas T.
   roleName:
@@ -100,6 +104,7 @@ contributor:
   - identifier: https://ror.org/01swzsf04
     name: University of Geneva
     schemaKey: Affiliation
+  identifier: 0009-0000-4274-7127
   includeInCitation: true
   name: Findling, Charles
   roleName:
@@ -140,17 +145,39 @@ contributor:
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- affiliation:
+  - identifier: https://ror.org/01d74sk53
+    name: CatalystNeuro
+    schemaKey: Affiliation
+  includeInCitation: false
+  name: Weigl, Szonja
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
+- affiliation:
+  - identifier: https://ror.org/01d74sk53
+    name: CatalystNeuro
+    schemaKey: Affiliation
+  includeInCitation: false
+  name: Trapani, Alessandra
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
 dateCreated: '2026-02-09T12:17:08.388995+00:00'
-description: This dataset contains widefield imaging data from mice, investigating
-  how prior expectations and neural dynamics are modified in a mouse model of autism
-  (CNTNALP2 knockout). The study explores sensory perception and decision-making tasks
-  to understand the neural basis of altered prior utilization.
+description: This dataset contains widefield calcium imaging and behavioral data from
+  mice, investigating how prior expectations and neural dynamics are modified in the
+  CNTNALP2 knockout mouse model of autism. The study employs a decision-making task
+  involving sensory perception to understand the neural basis of altered prior utilization.
 ethicsApproval: []
 id: DANDI:001712/draft
 identifier: DANDI:001712
 keywords:
 - CNTNALP2
 - widefield imaging
+- decision-making
+- prior expectations
+- sensory perception
+- calcium imaging
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
@@ -164,6 +191,18 @@ relatedResource:
   resourceType: dcite:Preprint
   schemaKey: Resource
   url: https://doi.org/10.1101/2025.09.12.675910
+- name: IBL widefield to nwb conversion code
+  relation: dcite:IsCompiledBy
+  repository: GitHub
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/catalystneuro/IBL-widefield-to-nwb
+- name: Dandiset 001712 example notebook
+  relation: dcite:IsSupplementedBy
+  repository: GitHub
+  resourceType: dcite:ComputationalNotebook
+  schemaKey: Resource
+  url: https://github.com/dandi/example-notebooks/blob/master/nb/001712.ipynb
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
